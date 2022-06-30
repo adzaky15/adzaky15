@@ -13,4 +13,6 @@
     <string name="zero">0</string>
     <string name="howl_button_text">Howl</string>
     <string name="count_button_text">Count</string>
+    <string name="go_back">Go Back</string>
+    <string name="random_text">Here is a Random Number until %d</string>
 </resources>

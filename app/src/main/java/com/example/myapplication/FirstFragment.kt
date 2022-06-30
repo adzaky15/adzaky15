@@ -39,7 +39,17 @@ class FirstFragment : Fragment() {
         // If binding: binding.randomButton.setOnClickListener
         // If view: view.findViewById<Button>(R.id.random_button).setOnClickListener
         binding.randomButton.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+            // Get the text view
+            val showCountTextView = view.findViewById<TextView>(R.id.textview_first)
+
+            // Get current count
+            val currentCount = showCountTextView.text.toString().toInt()
+
+            // Send Current Count to Fragment 2
+            val action = FirstFragmentDirections.actionFirstFragmentToSecondFragment(currentCount)
+            findNavController().navigate(action)
+
+            //findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
 
         // Find a howl_button by id
