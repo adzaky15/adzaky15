@@ -7,4 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="blood">#EE660000</color>
+    <color name="steel">#FFCED2D7</color>
+    <color name="stone">#FFB1A69B</color>
+    <color name="dirt">#EE9B7653</color>
 </resources>
