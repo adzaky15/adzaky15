@@ -29,8 +29,14 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
 
         binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
+            // I replaced the text
+            // It was originally "Replace with your own action"
+            Snackbar.make(view, "You fool! It was your own decision to do this",
+                Snackbar.LENGTH_LONG).setAction("Action", null).show()
+
+            // Forcefully quit the app
+            // It is like, a rage quit button
+            finish()
         }
     }
 

@@ -52,13 +52,43 @@ class FirstFragment : Fragment() {
             //findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
 
+        // Get random header until 2
+        val random = java.util.Random()
+        var randomHeader = random.nextInt(2 + 1)
+
+        // Check random number and random header
+        if(randomHeader == 0) {
+            view.findViewById<TextView>(R.id.look_first).text = ""
+        } else if (randomHeader == 1) {
+            view.findViewById<TextView>(R.id.look_first).text = "Don't Look"
+        } else {
+            view.findViewById<TextView>(R.id.look_first).text = "It's Here"
+        }
+
         // Find a howl_button by id
         view.findViewById<Button>(R.id.howl_button).setOnClickListener {
             // Create a Toast with some text and duration
             val myHowl = Toast.makeText(context, "The Black Moon Howls Tonight",
                 Toast.LENGTH_LONG)
+            val myBlood = Toast.makeText(context, "Blood is Fuel",
+                Toast.LENGTH_LONG)
+
             // Show Toast
-            myHowl.show()
+            // myHowl.show()
+
+            // Get random number until 4
+            // val random = java.util.Random()
+            var randomNumber = random.nextInt(4 + 1)
+
+            // Check random number
+            if(randomNumber < 3) {
+                // Show Howl
+                myHowl.show()
+            } else {
+                // Show Blood
+                myBlood.show()
+            }
+
         }
 
         // Find a count_button by id

@@ -15,4 +15,8 @@
     <string name="count_button_text">Count</string>
     <string name="go_back">Go Back</string>
     <string name="random_text">Here is a Random Number until %d</string>
+    <string name="blood_button_text">Blood</string>
+    <string name="mankind_dead">Mankind is Dead</string>
+    <string name="blood_fuel">Blood is Fuel</string>
+    <string name="hell_full">Hell is Full</string>
 </resources>
