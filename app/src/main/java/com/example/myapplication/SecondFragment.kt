@@ -54,7 +54,7 @@ class SecondFragment : Fragment() {
         if(randomHeader == 0) {
             view.findViewById<TextView>(R.id.textview_second).text = "Mankind is Dead"
         } else if (randomHeader == 1) {
-            view.findViewById<TextView>(R.id.textview_second).text = "Blood if Fuel"
+            view.findViewById<TextView>(R.id.textview_second).text = "Blood is Fuel"
         } else if (randomHeader == 2) {
             view.findViewById<TextView>(R.id.textview_second).text = "Hell is Full"
         }
